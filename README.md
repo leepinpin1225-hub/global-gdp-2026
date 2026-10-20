@@ -51,6 +51,7 @@ Many popular GDP datasets leave Taiwan out. The IMF includes it, so this project
 1. Which economies are the largest in 2026 by **total GDP**, **GDP per capita** and **GDP per capita (PPP)**?
 2. Where does **Taiwan** rank on each measure, and why do the rankings differ?
 3. Among the 30 largest economies, how do **real growth** and **inflation** compare?
+4. Does Taiwan's top-10 ranking on PPP mean it is as rich as it looks?
 
 ## Data
 
@@ -71,6 +72,20 @@ Many popular GDP datasets leave Taiwan out. The IMF includes it, so this project
 2. **Clean:** The raw response has 229 entries, but 32 of them are **regional aggregates** (e.g. *World*, *Euro area*). If they stay in, they take over the top of the rankings. I removed them by matching against the IMF's own country list, which leaves 197 economies (191 with a 2026 GDP figure).
 3. **Combine:** I merged six indicators into one table for 2026. I also added a derived **price level ratio** (GDP per capita at market rates ÷ GDP per capita at PPP), which shows how expensive a country is relative to the US.
 4. **Analyse and visualise:** I built the rankings, Taiwan's position, a peer comparison (Japan, Korea, Singapore, Hong Kong, China, US, UK, Germany) and five charts. Every number quoted in the chart titles and in this README is calculated in the notebook, not typed in by hand.
+
+## A second look: is Taiwan really that rich?
+
+In 2023 a [Commercial Times (工商時報) editorial](https://www.ctee.com.tw/news/20231106700043-439901) argued that Taiwan's high ranking in GDP per capita comes mainly from using PPP, calling it a "magical number". Using IMF figures, it noted a PPP conversion rate of NT$13.8 against a market rate of NT$32.3 per US dollar. In other words, prices were about 43% of the US level, which lifted GDP per capita from about USD 32k to USD 72k.
+
+**My 2026 data show the same pattern three years later.** Taiwan's price level ratio is 0.42, which lifts GDP per capita from USD 44k (31st) to USD 104k (9th).
+
+How I read it:
+- **The two measures answer different questions.** PPP shows what people can buy at home. Market exchange rates show what the economy is worth internationally, which is what matters for trade, investment and market size.
+- **Low prices are not only good news.** The editorial asks whether they reflect stagnant middle-class wages and unequal income distribution. GDP per capita is an average and says nothing about how income is shared.
+- **Taiwan's PPP figure is less certain.** The World Bank does not publish a PPP for Taiwan, so the IMF's figure is its own estimate.
+- **Output is not the same as household income.** A large share of Taiwan's 2026 output is exported AI hardware, and the IMF [projects a current account surplus of 22% of GDP](https://focustaiwan.tw/business/202610130005). Much of what Taiwan produces is not consumed at home.
+
+**My conclusion:** for international comparisons I would use USD 44k (31st) as the headline figure. I would treat USD 104k (9th) as the most flattering view of living standards, to be checked against wage and household income data. That is a natural next step for this project.
 
 ## Caveats
 
