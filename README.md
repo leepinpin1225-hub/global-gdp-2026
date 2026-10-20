@@ -1,6 +1,6 @@
 # Global GDP Ranking 2026: Where Does Taiwan Stand?
 
-**I ranked 191 economies on total GDP, GDP per capita and GDP per capita (PPP), then compared growth and inflation across the 30 largest. The data comes live from the IMF API.**
+**I ranked 191 economies on total GDP, GDP per capita and Purchasing Power Parity (PPP), then compared growth and inflation across the 30 largest. The data comes live from the IMF API.**
 Many popular GDP datasets leave Taiwan out. The IMF includes it, so this project also looks at where Taiwan ranks and why its position changes so much depending on the measure.
 
 `Python` · `pandas` · `requests (REST API)` · `matplotlib` · `Jupyter`
